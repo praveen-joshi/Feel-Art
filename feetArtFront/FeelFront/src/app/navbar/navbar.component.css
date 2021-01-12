@@ -1,0 +1,12 @@
+.navbar-light .navbar-nav .nav-link{
+    color: black;
+}
+
+.navbar-light .navbar-nav .nav-link:hover{
+    color: rebeccapurple;
+    border-bottom: 2px solid rebeccapurple;
+}
+
+nav{
+    border-bottom: 1px solid black;
+}

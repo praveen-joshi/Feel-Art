@@ -1,0 +1,28 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~bootstrap/dist/css/bootstrap.css";
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.my_head{
+    color: rebeccapurple;
+    border-bottom:1px solid rebeccapurple;
+    border-top:1px solid rebeccapurple;
+    text-align: center;
+}
+
+.fm{
+    background-color: whitesmoke;
+    box-shadow: 2px 1px 4px 4px rebeccapurple;
+    padding: 2%;
+}
+.add_bg{
+    top:0px;
+    right: 0px;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    
+    z-index: -1;
+    background:linear-gradient(90deg, rgba(15, 11, 224, 0.1) 62%, rgba(15, 11, 224, 0.1) 62%), url('./assets/bg2.jpg');
+    background-size: cover;
+}

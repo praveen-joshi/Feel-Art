@@ -1,0 +1,23 @@
+.bg
+{
+    top: 0px;
+    position: absolute;
+    min-height:100%;
+    background:linear-gradient(90deg, rgba(15, 11, 224, 0.1) 62%, rgba(15, 11, 224, 0.1) 62%), url('../../assets/bg2.jpg');
+    background-size:cover;
+    height: 100vh;
+    width: 100%;
+    z-index: -1;
+}
+
+.cont{
+    margin: auto;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+}
+.cont>h1{
+    color: rgb(158, 6, 6);
+    border: 2px solid;
+}

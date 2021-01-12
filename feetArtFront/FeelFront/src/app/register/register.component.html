@@ -1,0 +1,29 @@
+<h1 class="mb-3">Register</h1>
+<form class="fm m-5">
+    <div class="mb-3">
+      <label for="name" class="form-label">name</label>
+      <input type="name" [(ngModel)]="user.name" class="form-control" name='name' id="name">
+    </div>
+    <div class="mb-3">
+      <label for="email" class="form-label">Email address</label>
+      <input type="email" [(ngModel)]="user.email" class="form-control" name='email' id="email" aria-describedby="emailHelp">
+      <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+    </div>
+    <div class="mb-3">
+        <label for="password" class="form-label" >Password</label>
+        <input type="password" [(ngModel)]="user.password" name='password' class="form-control" id="password">
+    </div>
+    <div class="mb-3">
+        <label for="city" class="form-label" >city</label>
+        <input type="text" [(ngModel)]="user.city" name='city' class="form-control" id="city">
+    </div>
+    <div class="mb-3">
+      <label for="address" class="form-label" >Address</label>
+      <input type="text" [(ngModel)]="user.address" name='address' class="form-control" id="address">
+    </div>
+    <button type="submit" (click)='Register()'class="btn btn-primary">Submit</button>
+</form>
+
+<div class="add_bg">
+
+</div>

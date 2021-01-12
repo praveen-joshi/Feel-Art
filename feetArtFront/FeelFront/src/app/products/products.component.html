@@ -1,0 +1,28 @@
+<h1 class="text-center mb-5">An Awersome Collection of Arts is here</h1>
+
+
+<div class="row row-cols-1 row-cols-md-3 g-4 m-3">
+
+    <div class="col" *ngFor=" let art of Arts$ | async">
+      <div class="card h-100">
+        <img src={{art.image}} class="card-img-top" alt="..." style="max-height: 200px;">
+        <div class="card-body">
+          <h5 class="card-title">{{art.name}}</h5>
+          <p class="card-text">Price:{{art.price}}</p>
+          <button type="button" class="btn btn-primary w-100 m-0" [routerLink]="['/viewProduct',art._id]">View Product</button>
+        </div>
+      </div>
+    </div>
+    
+</div>
+
+
+
+    <!-- <a class="p_container p-2 mx-5" [routerLink]="['/viewProduct',art._id]">
+        <img src={{art.image}}>
+        <div class="mx-5">
+            <h2 class="mb-3">{{art.name}}</h2>
+            <h4>Price:{{art.price}}</h4>
+        </div>
+    </a>        -->
+
